@@ -1,31 +1,27 @@
-package Asistensi2;
+package Asistensi;
 import java.util.Scanner;
 
 import java.util.ArrayList;
 
-public class ProsesSepatu{
+public class ProsesSepatu extends DataInheritance{
     Scanner input = new Scanner(System.in);
 
     public ArrayList<InfoSepatu> arraydata = new ArrayList<>();
 
     public void add_data()
     {
-
-        
-        String name, price;
-        int stock;
+        // String name, price;
+        // int stock;
 
         System.out.print("\nNama Sepatu : ");
-        name = input.nextLine();
+        nama_data = input.nextLine();
         System.out.print("Harga : Rp. ");
-        price = input.nextLine();
+        harga_sepatu = input.nextLine();
         System.out.print("Stock : ");
-        stock = input.nextInt();
+        stock_sepatu = input.nextInt();
         input.nextLine();
 
-        arraydata.add(new InfoSepatu(name, price, stock));
-
-
+        arraydata.add(new InfoSepatu(nama_data, harga_sepatu, stock_sepatu));
     }
 
     public void view(){
