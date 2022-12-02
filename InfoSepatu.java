@@ -1,44 +1,48 @@
-package Asistensi2;
+package Asistensi;
 
-public class InfoSepatu{
-    String nama;
-    String harga;
-    int stok;
+public class InfoSepatu extends DataInheritance{
+    // String nama;
+    // String harga;
+    // int stok;
 
 
     public InfoSepatu(String name, String price, int stock){
-        this.nama = name;
-        this.harga = price;
-        this.stok = stock;
+        // this.nama = name;
+        // this.harga = price;
+        // this.stok = stock;
+        nama_data = name;
+        harga_sepatu = price;
+        stock_sepatu = stock;
+
     }
 
     public void cetak()
     {
-        System.out.println("Nama : "+this.nama);
-        System.out.println("Harga : "+this.harga);
-        System.out.println("Stok : "+this.stok+"\n");
+        System.out.println("Nama : "+ nama_data);
+        System.out.println("Harga : "+ harga_sepatu);
+        System.out.println("Stok : "+ stock_sepatu +"\n");
     }
 
     public String getNama() {
-        return nama;
+        return nama_data;
     }
 
     public String getHarga() {
-        return harga;
+        return harga_sepatu;
     }
 
     public int getStok() {
-        return stok;
+        return stock_sepatu;
     }
 
     public void setNama(String nama) {
-        this.nama = nama;
+        this.nama_data = nama;
     }
 
     public void setHarga(String harga) {
-        this.harga = harga;
+        this.harga_sepatu = harga;
     }
     public void setStok(int stok) {
-        this.stok = stok;
+        this.stock_sepatu = stok;
     }
 }
