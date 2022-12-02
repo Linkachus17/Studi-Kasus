@@ -1,18 +1,18 @@
-package Asistensi2;
+package Asistensi;
 import java.util.Scanner;
 
 import java.util.ArrayList;
 
-public class MainSepatu {
+public class MainSepatu{
 
     public static Scanner input = new Scanner(System.in);
     public static ArrayList <InfoSepatu> info = new ArrayList<InfoSepatu>();
-    public static ProsesSepatu pros = new ProsesSepatu();
 
     public static void main(String[]args) {
         int pil = -1, stock;
         String nama, price;
         ProsesSepatu proses_sepatu = new ProsesSepatu();
+        Cred cred = new Cred();
 
         do{
             System.out.println("Indexes : " + proses_sepatu.sizeArray());
