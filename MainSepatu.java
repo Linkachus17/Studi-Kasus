@@ -1,8 +1,8 @@
-package Asistensi;
+
 import java.util.Scanner;
 
-import Asistensi.Process.ProsesLogin;
-import Asistensi.Process.ProsesSepatu;
+import Controller.Controller_Login;
+import Controller.Controller_Sepatu;
 
 public class MainSepatu{
 
@@ -11,8 +11,8 @@ public class MainSepatu{
 
     public static void main(String[]args) {
         int pil = -1;
-        ProsesSepatu proses_sepatu = new ProsesSepatu(null, 0, 0);
-        ProsesLogin proseslogin = new ProsesLogin();
+        Controller_Sepatu proses_sepatu = new Controller_Sepatu(null, 0, 0);
+        Controller_Login proseslogin = new Controller_Login();
 
         do{
             System.out.println("Indexes : " + proses_sepatu.sizeArray());

@@ -1,4 +1,6 @@
-package Asistensi.Entity;
+package Entity;
+
+import Interface.Interface;
 
 public class EntitySepatu implements Interface{
     protected String namaSepatu;

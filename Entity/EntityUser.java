@@ -1,4 +1,4 @@
-package Asistensi.Entity;
+package Entity;
 
 public class EntityUser {
     protected String user;
