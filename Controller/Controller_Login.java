@@ -1,6 +1,6 @@
 package Controller;
 import java.util.Scanner;
-
+import view.MainSepatu;
 import Entity.EntityUser;
 
 
@@ -33,8 +33,9 @@ public class Controller_Login extends EntityUser{
             if (checkcred.Passwd.equals(password)){
                 System.out.println("Credential Valid!\n");
 
-                // Enter to MainSepatu
-                MainSepatu mainSepatu = new MainSepatu();
+                // Enter to view.MainSepatu
+                new MainSepatu().mainsepatu();
+
 
             }
             else if (user != checkcred.User || password != checkcred.Passwd){

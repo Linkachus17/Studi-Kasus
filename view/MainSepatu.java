@@ -1,15 +1,16 @@
+package view;
 
 import java.util.Scanner;
 
 import Controller.Controller_Login;
 import Controller.Controller_Sepatu;
 
-public class MainSepatu{
-
+public class MainSepatu
+{
     public static Scanner input = new Scanner(System.in);
     // public static ArrayList <InfoSepatu> info = new ArrayList<InfoSepatu>();
 
-    public static void main(String[]args) {
+    public static void mainsepatu() {
         int pil = -1;
         Controller_Sepatu proses_sepatu = new Controller_Sepatu(null, 0, 0);
         Controller_Login proseslogin = new Controller_Login();
@@ -24,12 +25,12 @@ public class MainSepatu{
                     proses_sepatu.add_data();
                     System.out.println("Debug Item : " + proses_sepatu.sizeArray() + "\n");
                     break;
-                
+
                 case 2:         // Read
                     System.out.println("\n");
                     proses_sepatu.view();
                     break;
-                
+
                 case 3:         // Update
                     System.out.println("Indexes : " + proses_sepatu.sizeArray());
                     System.out.println("\nMenu Edit -=-=-=-=-=-=-=-=-=-=-=-");
@@ -61,7 +62,7 @@ public class MainSepatu{
                                 proses_sepatu.editHarga(indexEdit);
 
                             }
-                            break; 
+                            break;
                         }
                         case 3:{        // Update Stock
                             System.out.print("Pilih index : ");
@@ -90,7 +91,7 @@ public class MainSepatu{
                     }
                     break;
                 }
-                
+
             }
 
         }while(pil != 0);
