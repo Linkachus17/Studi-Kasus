@@ -1,6 +1,6 @@
 package Controller;
 import java.util.Scanner;
-import view.MainSepatu;
+
 import Entity.EntityUser;
 
 
@@ -34,7 +34,8 @@ public class Controller_Login extends EntityUser{
                 System.out.println("Credential Valid!\n");
 
                 // Enter to view.MainSepatu
-                new MainSepatu().mainsepatu();
+                // new MainSepatu().mainsepatu();
+                Controller_Menu mainSepatu = new Controller_Menu();
 
 
             }

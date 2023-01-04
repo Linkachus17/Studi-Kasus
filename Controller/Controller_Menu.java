@@ -1,11 +1,8 @@
-package view;
+package Controller;
 
 import java.util.Scanner;
 
-import Controller.Controller_Login;
-import Controller.Controller_Sepatu;
-
-public class MainSepatu
+public class Controller_Menu
 {
     public static Scanner input = new Scanner(System.in);
     // public static ArrayList <InfoSepatu> info = new ArrayList<InfoSepatu>();
